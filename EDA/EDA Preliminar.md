@@ -7,5 +7,6 @@ Este EDA preliminar tiene los siguientes objetivos:
 - Hacer una primera deteccion de outliers
 - Definir tipos de datos de cada variable o columna y determianr si estan bien clasificadas para el posterior analisis estadistico
 - Variables desbalanceadas, esto es que tienen algun valor preponderante
-- Variables que tienen una gran cantidad de ceros, lo cual puede determinar si se debe hacer algun tipo de imputacion o descartar
-  esa columna para el analisis
+- Variables que tienen una gran cantidad de ceros, lo cual puede determinar si se debe hacer algun tipo de imputacion o descartar esa columna para el analisis
+
+Este primer analisis se puede hacer con librerias **ydata_profiling** y **sweetbiz**, adjuntamos para ellos los reportes generados html
