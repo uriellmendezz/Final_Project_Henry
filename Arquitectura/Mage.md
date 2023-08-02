@@ -37,8 +37,7 @@ concurrency, and easy identification of bottlenecks or failures in the workflow.
 encapsulated as a standalone component within the DAG. This approach contrasts with the "spaghetti code" that can result from more linear, 
 ad-hoc approaches to workflow management.
 
-While Directed Acyclic Graphs (DAGs) are a powerful concept for modeling and managing complex workflows, they do come with certain disadvantages 
-and challenges:
+While Directed Acyclic Graphs (DAGs) are a powerful concept for modeling and managing complex workflows, they do come with certain ***disadvantages and challenges***:
 
 - **Complexity**: DAGs can become quite complex as the number of tasks and dependencies grows. Managing and visualizing intricate graphs can
   become challenging and may require specialized tools or software.
@@ -69,5 +68,20 @@ and challenges:
 
 - **Learning Curve**: Understanding and working with DAG-based workflow management systems might require a learning curve for team members who
   are new to the concept.
+
+### Stop wasting time waiting around for your DAGs to finish testing.
+### Get instant feedback from your code each time you run it.
+
+### Don’t have a large team dedicated to Airflow?
+### Mage makes it easy for a single developer or small team to scale up and manage thousands of pipelines.
+
+#### 1.Fast deploy
+Deploy Mage to AWS, GCP, or Azure with only 2 commands using maintained Terraform templates.
+
+#### 2.Scaling made simple
+Transform very large datasets directly in your data warehouse or through a native integration with Spark.
+
+#### 3.Observability
+Operationalize your pipelines with built-in monitoring, alerting, and observability through an intuitive UI.
 
 
