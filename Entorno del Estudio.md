@@ -65,6 +65,10 @@ Midtown, Manhattan
 |Taxis verdes o de borough|-Norte de Manhattan -Bronx-Brooklyn -Staten Island -Queens||
 |FHVs,Carros Negros-Uber-Lyft-Servicios Livery|||
 
+- **Commuter Vans**: Los "commuter vans" son vehículos de transporte público que operan en áreas donde el acceso a los sistemas de transporte público convencionales puede ser limitado. Estos vans ofrecen un servicio de transporte compartido, a menudo en rutas específicas o bajo demanda, para llevar a los pasajeros desde sus hogares a destinos populares, como estaciones de tren, paradas de autobús o áreas comerciales. Son una forma de llenar los vacíos en la red de transporte público y proporcionar opciones de viaje adicionales para las personas que viven en áreas menos densamente pobladas.
+
+- **Paratransit Vehicles**: Los "paratransit vehicles" son vehículos especialmente diseñados y equipados para transportar a personas con discapacidades o necesidades de movilidad especiales. Estos vehículos ofrecen un servicio puerta a puerta para las personas que no pueden utilizar el transporte público convencional debido a limitaciones físicas o cognitivas. El servicio de paratransit es proporcionado por la Autoridad Metropolitana del Transporte (MTA) en Nueva York y está destinado a garantizar que las personas con discapacidades tengan acceso equitativo al transporte
+
 SOUND CONTAMINATION
 
  
