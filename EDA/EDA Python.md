@@ -32,4 +32,19 @@
 > **Filtrar columnas con un porcentaje de ceros superior al 20%, lo puedes cambiar para ajustar el porcentaje**  
 > columns_with_high_zeros = zero_percentages[zero_percentages > 20]  
 > print("Columnas con un porcentaje alto de ceros:")  
-> print(columns_with_high_zeros)  
+> print(columns_with_high_zeros)
+
+### 5. Variables desbalanceadas
+> **Calcular la frecuencia de cada valor en cada columna**  
+> value_counts = df.apply(pd.value_counts)  
+
+> **Calcular el porcentaje del valor más común en cada columna**  
+> max_value_percentages = value_counts.max() / len(df) * 100  
+
+> **Filtrar columnas con un valor muy común en más del 50% de los registros**  
+> unbalanced_columns = max_value_percentages[max_value_percentages > 50]  
+> print("Columnas desbalanceadas:")  
+> print(unbalanced_columns)  
+
+### 6. Detectar outliers
+> **Calcular la frecuencia de cada valor en cada columna** 
