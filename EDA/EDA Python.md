@@ -48,9 +48,14 @@
 
 ### 6. Detectar outliers
 > **Calcular la frecuencia de cada valor en cada columna**
->
 
 ### 7. Sesgo
-> **Calcular la frecuencia de cada valor en cada columna**
+> **Filtrar las columnas que no son datetime**  
+> numeric_columns = df.select_dtypes(include=['int', 'float']).columns  
+
+> **Calcular el sesgo de las columnas numéricas**
+> skewness = df[numeric_columns].skew()  
+> print("Sesgo de las columnas numéricas:")  
+> print(skewness)  
 
 ### 8. 
