@@ -46,10 +46,7 @@
 > print("Columnas desbalanceadas:")  
 > print(unbalanced_columns)  
 
-### 6. Detectar outliers
-> **Calcular la frecuencia de cada valor en cada columna**
-
-### 7. Sesgo
+### 6. Sesgo
 > **Filtrar las columnas que no son datetime**  
 > numeric_columns = df.select_dtypes(include=['int', 'float']).columns  
 
@@ -58,4 +55,32 @@
 > print("Sesgo de las columnas numéricas:")  
 > print(skewness)  
 
-### 8. 
+### 7. Valores estadisticos por columna numerica
+> df.describe()
+
+- Podemos revisar la normalidad de las distribuciones por columna a partir del informe de ydata_profiling y sweetviz, mirando los histograma que generan esas librerias y cruzandolos con datos de df.describe() para poder determinar outliers.
+
+### 8. Outliers
+
+- #### <ins>Metodo Z Score</ins>  
+  El método del Z-score es una herramienta que se basa en la idea de usar desviaciones estándar para medir la distancia       entre los datos y la media, y puedes elegir el umbral que mejor se adapte a tus necesidades.  
+
+>  **Calcular el Z-score para la variable**  
+> z_scores = (df['extra'] - df['extra'].mean()) / df['extra'].std()  
+
+> **Definir un umbral para considerar outliers (por ejemplo, 2 desviaciones estándar)**  
+> z_threshold = 2  
+
+> **Detectar outliers**  
+> outliers = df[abs(z_scores) > z_threshold]  
+
+> **Calcular valores límite superior e inferior**
+> upper_limit = df['extra'].mean() + z_threshold * df['extra'].std()  
+> lower_limit = df['extra'].mean() - z_threshold * df['extra'].std()  
+
+> **Mostrar resultados**  
+> print("Cantidad de outliers:", len(outliers))  
+> print("Valor límite superior:", upper_limit)  
+> print("Valor límite inferior:", lower_limit)  
+> print("\nOutliers detectados:")  
+> print(outliers)  
