@@ -2,6 +2,6 @@
 
 ### Tamaño de dataframe, columnas y tipo de dato, cantidad de registros, volumen en memoria
 
-> df.info()
+`df.info()`
 
 ### Filas duplicadas
