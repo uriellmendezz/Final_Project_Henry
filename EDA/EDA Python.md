@@ -20,3 +20,16 @@
 > **Crear un nuevo dataframe con los resultados**  
 >missing_df = pd.DataFrame({'Missing Count': missing_data, 'Missing Percentage': missing_percentage})  
 >print(missing_df)`
+
+### 4. Variables con gran cantidad de ceros
+
+> **Calcular la cantidad de ceros en cada columna**  
+> zero_counts = (df == 0).sum()  
+> total_records = len(df)  
+> zero_percentages = (zero_counts / total_records) * 100  
+> print (zero_counts)
+
+> **Filtrar columnas con un porcentaje de ceros superior al 20%, lo puedes cambiar para ajustar el porcentaje**  
+> columns_with_high_zeros = zero_percentages[zero_percentages > 20]  
+> print("Columnas con un porcentaje alto de ceros:")  
+> print(columns_with_high_zeros)  
