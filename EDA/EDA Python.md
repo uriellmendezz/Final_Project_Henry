@@ -47,4 +47,10 @@
 > print(unbalanced_columns)  
 
 ### 6. Detectar outliers
-> **Calcular la frecuencia de cada valor en cada columna** 
+> **Calcular la frecuencia de cada valor en cada columna**
+>
+
+### 7. Sesgo
+> **Calcular la frecuencia de cada valor en cada columna**
+
+### 8. 
