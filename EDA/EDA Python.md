@@ -4,14 +4,14 @@
 
 >df.info()
 
-### 2. Detectar y contar filas duplicadas en el dataframe
+### 2. Detectar y contar filas duplicadas en el dataframe  
 >duplicated_rows = df[df.duplicated()]  
 >duplicated_count = duplicated_rows.shape[0]  
 >print("Filas duplicadas:")  
 >print(duplicated_rows)
 >print("Cantidad de filas duplicadas:", duplicated_count)
 
-### 3. Detectar valores faltantes y el % sobre el valor de los datos
+### 3. Detectar valores faltantes y el % sobre el valor de los datos  
 
 > **Detectar valores faltantes y calcular su porcentaje por columna**  
 >missing_data = df.isna().sum()  
@@ -19,9 +19,9 @@
 
 > **Crear un nuevo dataframe con los resultados**  
 >missing_df = pd.DataFrame({'Missing Count': missing_data, 'Missing Percentage': missing_percentage})  
->print(missing_df)`
+>print(missing_df)`  
 
-### 4. Variables con gran cantidad de ceros
+### 4. Variables con gran cantidad de ceros  
 
 > **Calcular la cantidad de ceros en cada columna**  
 > zero_counts = (df == 0).sum()  
@@ -94,11 +94,11 @@
 > **Calcular el IQR (Rango Intercuartílico)**  
 > IQR = Q3 - Q1  
 
-> **Definir los límites para detectar outliers**
+> **Definir los límites para detectar outliers**  
 > lower_limit = Q1 - 1.5 * IQR  
 > upper_limit = Q3 + 1.5 * IQR  
 
-> **Detectar outliers**
+> **Detectar outliers**  
 > outliers = df[(df['passenger_count'] < lower_limit) | (df['passenger_count'] > upper_limit)]  
 
 > **Mostrar resultados**  
