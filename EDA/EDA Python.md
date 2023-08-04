@@ -62,7 +62,7 @@
 
 ### 8. Outliers
 
-- #### <ins>Metodo Z Score</ins>  
+- #### <ins>Metodo Z Score. Variables con distribucion Normal</ins>  
   El método del Z-score es una herramienta que se basa en la idea de usar desviaciones estándar para medir la distancia       entre los datos y la media, y puedes elegir el umbral que mejor se adapte a tus necesidades.  
 
 >  **Calcular el Z-score para la variable**  
@@ -83,4 +83,27 @@
 > print("Valor límite superior:", upper_limit)  
 > print("Valor límite inferior:", lower_limit)  
 > print("\nOutliers detectados:")  
+> print(outliers)
+
+- #### <ins>Metodo del IQR. Variables con distribucion No Normal y sesgo No alto o No Muy ALto </ins>  
+
+> **Calcular el primer cuartil (Q1) y el tercer cuartil (Q3)**  
+> Q1 = df['passenger_count'].quantile(0.25)  
+> Q3 = df['passenger_count'].quantile(0.75)  
+
+> **Calcular el IQR (Rango Intercuartílico)**  
+> IQR = Q3 - Q1  
+
+> **Definir los límites para detectar outliers**
+> lower_limit = Q1 - 1.5 * IQR  
+> upper_limit = Q3 + 1.5 * IQR  
+
+> **Detectar outliers**
+> outliers = df[(df['passenger_count'] < lower_limit) | (df['passenger_count'] > upper_limit)]  
+
+> **Mostrar resultados**  
+> print("Límite inferior:", lower_limit)  
+> print("Límite superior:", upper_limit)  
+> print("\nOutliers detectados:")  
+> print("Cantidad de outliers:", len(outliers))  
 > print(outliers)  
