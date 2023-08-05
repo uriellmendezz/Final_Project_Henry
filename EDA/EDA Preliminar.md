@@ -1,6 +1,7 @@
 # EDA PRELIMINAR
 
 Este EDA preliminar tiene los siguientes objetivos:
+- Entender cada campoo variable que informacion contiene
 - Definir tamaño de los dataframes , registros x columnas
 - Detectar filas duplicadas
 - Detectar valores faltantes y el % sobre el valor de los datos
