@@ -1,3 +1,5 @@
+### ESTRUCTURA DE COSTOS EMPRESA TRANSPORTES TAXI
+
 La estructura de costos de una empresa de taxis en la ciudad de Nueva York puede variar dependiendo de varios factores, 
 como el tamaño de la flota, el tipo de vehículos utilizados, las regulaciones locales y otros factores específicos del negocio.
 Aquí hay una descripción general de los posibles componentes de la estructura de costos para una empresa de taxis en 
