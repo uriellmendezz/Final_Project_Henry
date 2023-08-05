@@ -1,4 +1,4 @@
-### ESTRUCTURA DE COSTOS TIPO UBER
+### ESTRUCTURA DE COSTOS PLATAFORMA
 
 La estructura de costos de una empresa tipo Uber puede variar dependiendo de varios factores, como la ubicación geográfica, 
 la escala de operación, las regulaciones locales y otros elementos específicos del negocio. 
