@@ -33,18 +33,19 @@ País: USA
 
 7)	Entidades y materias reguladas
 
-8.1 NYC Taxi and Limousine Commission
-		Regula las industrias FHV y Taxi
+	7.1 NYC Taxi and Limousine Commission  
 
-8.2 NYC Mayor’s Office of Sustainability
-		Publica el inventario de emisiones de gases de efecto invernadero de la 
-Ciudad
+	Regula las industrias FHV y Taxi
+
+	7.2 NYC Mayor’s Office of Sustainability
+
+	Publica el inventario de emisiones de gases de efecto invernadero de la ciudad
 
 8)	Retos de la ciudad
 
-8.1 Reducir el uso de vehículos y sus emisiones haciendo frente al cambio climático antropogénico
-8.2 Costo de la congestión especialmente en Midtown, Manhattan.
-El aumento documentado de FHV vacíos en esta zona juega un papel importante
+	8.1 Reducir el uso de vehículos y sus emisiones haciendo frente al cambio climático antropogénico
+	8.2 Costo de la congestión especialmente en Midtown, Manhattan.
+	El aumento documentado de FHV vacíos en esta zona juega un papel importante
 
 ![image](https://github.com/uriellmendezz/Final_Project_Henry/assets/115907710/fd00baf0-b776-4a15-afd3-aaed5e4df3a9)
 
@@ -62,8 +63,11 @@ Midtown, Manhattan
 |Vehiculo|Operacion|Zona|  
 |---|---|---|
 |Taxis amarillos|Recoge pasajeros en las calles o por app|Toda la ciudad|
-|Taxis verdes o de borough|-Norte de Manhattan -Bronx-Brooklyn -Staten Island -Queens||
+|Taxis verdes o de borough|-Norte de Manhattan (W 110 St/E 96th St ) -Bronx-Brooklyn -Staten Island -Queens||
 |FHVs,Carros Negros-Uber-Lyft-Servicios Livery|||
+
+![image](https://github.com/uriellmendezz/Final_Project_Henry/assets/115907710/6e1d7c67-48c6-48c5-8b23-845d034dd293)
+Zona de actuación Taxis Verdes
 
 - **Commuter Vans**: Los "commuter vans" son vehículos de transporte público que operan en áreas donde el acceso a los sistemas de transporte público convencionales puede ser limitado. Estos vans ofrecen un servicio de transporte compartido, a menudo en rutas específicas o bajo demanda, para llevar a los pasajeros desde sus hogares a destinos populares, como estaciones de tren, paradas de autobús o áreas comerciales. Son una forma de llenar los vacíos en la red de transporte público y proporcionar opciones de viaje adicionales para las personas que viven en áreas menos densamente pobladas.
 
