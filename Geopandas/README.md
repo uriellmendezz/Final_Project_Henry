@@ -1,4 +1,4 @@
-# GEOPANDAS
+# GEOPANDAS (version 0.13.2)
 
 https://www.youtube.com/watch?v=DfPAEdD7Cjg&list=PL_YyCdnLDJAinPCjURIS-Yr5FLpr2AyAO
 
