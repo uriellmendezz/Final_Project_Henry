@@ -34,4 +34,9 @@ https://www.youtube.com/watch?v=DfPAEdD7Cjg&list=PL_YyCdnLDJAinPCjURIS-Yr5FLpr2A
 **Projection**: This CRS is not projected; it represents data on a spherical model of the Earth.  
 **Use Case**: WGS 84 is commonly used for global positioning, mapping, and visualization. It's the standard coordinate system for most global mapping applications and GPS devices.  
 
+- La estructura de datos central en GeoPandas es geopandas.GeoDataFrame, una subclase de pandas.DataFrame, que puede almacenar columnas geométricas y realizar operaciones espaciales.
+
+- geopandas.GeoSeries es una subclase de pandas.Series que maneja las geometrías. Por lo tanto, GeoDataFrame es una combinación de pandas.Series, con datos tradicionales (numéricos, booleanos, texto, etc.), y geopandas.GeoSeries, con geometrías (puntos, polígonos, etc.).
+
+- 
 
