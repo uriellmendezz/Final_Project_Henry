@@ -1,114 +1,57 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png) 
-​
+# Grupal project - NYC Taxis & Monoxide Carbon Emission Analysis
+​![Cover Image](img/cover.png)
 
-# **PROYECTO GRUPAL Nº  02**
-- - -
+# Introducción
+Te damos la bienvenida a nuestro proyecto de Data Science, el cual se fundamenta en conjuntos de datos históricos verídicos y detallados relativos a los servicios de taxi en Manhattan, Nueva York. Estos conjuntos de datos abarcan una variedad de servicios de transporte, desde los icónicos taxis amarillos y taxis verdes hasta los vehículos de alquiler y los vehículos de alquiler de alto volumen, como aquellos ofrecidos por empresas de transporte urbano como "Uber" o "Lyft", que operan en esta ciudad.
 
-# <h1 align="center">**`NYC Taxis & Carbon Emission`**</h1>
-​
+Además, nuestro proyecto pone especial énfasis en un aspecto de suma importancia: el impacto ambiental que estos servicios de transporte tienen en Manhattan. En un contexto en el que la preocupación por la calidad del aire y la sostenibilidad va en aumento, nos hemos comprometido a analizar la contribución de los taxis a las emisiones de carbono en la ciudad. Nuestra meta es proporcionar a las empresas de taxis posibles soluciones y oportunidades en el mercado de los vehículos eléctricos. De esta manera, no solo podrán aumentar sus ganancias y beneficios, sino que también contribuirán significativamente al cuidado del medio ambiente.
 
-<p align="center">
-<img src="https://canalc.com.ar/wp-content/uploads/2023/04/image-449.png"  >
-</p>
-​
-
-## **Contexto**
-"En la ciudad de Nueva York, los servicios de taxis y de viajes compartidos en vehículos como Uber, han transformado la forma en que las personas se desplazan por las calles. Estos servicios brindan una alternativa conveniente y relativamente accesible al transporte público y al alquiler de automóviles. Además, estos servicios generan una gran cantidad de datos que pueden ser procesados y analizados por consultoras, empresas organismos públicos y también, por estudiantes de Ciencias de Datos.
-​
-
-Los servicios de taxis y de viajes compartidos en vehículos generan grandes cantidades de datos en tiempo real, incluyendo información sobre la ubicación del vehículo, la duración del viaje, la tarifa cobrada y la calificación del conductor. Estos datos pueden ser utilizados para identificar patrones de viaje y demanda, así como para mejorar la eficiencia y la calidad del servicio."
-​
-
-El cambio climático se ha acelerado a niveles sin precedentes como consecuencia de las actividades humanas, siendo una de las mayores responsables la necesidad de energía obtenida a partir de diversas fuentes de combustibles fósiles. El impacto del desarrollo energético en el ambiente y los consumos generados, atraen a las compañías a tomar acción en cómo intervenir en estas problemáticas. Lo cual lleva a mediciones de consumo y generación para intervenir o mejorar dicha generación/consumo.
-
-## **Rol a desarrollar**
-​
-"Una empresa de servicios de transporte de pasajeros, que actualmente se encuentra operando en el sector de micros
-de media y larga distancia, está interesada en invertir en el sector de transporte de pasajeros con automóviles. Con una visión de un futuro menos contaminado y ajustarse a las tendencias de mercado actuales, quieren corroborar la relación entre estos medios de transporte particulares y la calidad del aire, como también la contaminación sonora, para estudiar la posibilidad de implementar vehículos eléctricos a su flota; ya sea en su totalidad o parte de la misma.
-
-​
-Pero debido a que sería una unidad de negocio nueva, se pretende hacer un análisis preliminar del movimiento de los
-taxis en la ciudad de Nueva York, para poder obtener un marco de referencia y poder tomar decisiones bien fundamentadas.
-
-​
-Tu equipo es contratado por dicha empresa, con el objetivo de acompañar al negocio, en ese proceso de toma de decisión,
-para lo cual deberán utilizar los datos provistos de mayor calidad encontrados, y cruzarlo con otros datos, como los ofrecidos por viajes compartidos, calidad del aire, contaminación sonora y correlaciones climáticas.
-Nota: Pueden agregar todos los datasets que consideren pertinentes para cumplir la propuesta de trabajo, pero es obligatorio cruzar el dataset de taxis con al menos otros dos (condición necesaria de aprobación).
-"
-
-## **Propuesta de trabajo**
-​
-Recopilar, depurar y disponibilizar la información: Creación de una base de datos (DataWarehouse) de diferentes fuentes, tanto provistas por Henry como incorporadas por ustedes, corriendo en local o alojada en proveedores en la nube. La base de datos depurada deberá contemplar por lo menos dos tipos diferentes de extracción de datos, ejemplo: datos estáticos, llamadas a una API, scrapping, entre otros. 
-​
-Reporte y análisis significativos de la(s) línea(s) de investigación escogidas: El análisis debe contemplar las relaciones entre variables y concluir, si es que existe, una relación entre estas, y los posibles factores que causan dicha relación en la realidad. 
-​
-Entrenamiento y puesta en producción de un modelo de machine learning de clasificación no supervisado o supervisado: El modelo debe resolver un problema y conectar globalmente con los objetivos propuestos que se propongan como proyecto.
-​
+# Objectives
+### Promover la Adopción de Vehículos Eléctricos
+Uno de nuestros principales objetivos es persuadir a la propietaria del proyecto de la viabilidad de los vehículos eléctricos como una solución efectiva para reducir la contaminación ambiental causada por los servicios de transporte que utilizan combustibles fósiles, como los taxis. Buscamos presentar argumentos sólidos respaldados por datos y análisis que demuestren los beneficios económicos y ambientales de esta transición hacia vehículos eléctricos.
+### Desarrollar un Modelo de Machine Learning para la Predicción de CO2
+Otro objetivo fundamental es crear un modelo de Machine Learning capaz de predecir la concentración de dióxido de carbono (CO2) en el aire de la ciudad de Manhattan para los próximos meses y años. Este modelo permitirá una mejor comprensión de las tendencias de emisiones de carbono y ayudará en la toma de decisiones informadas sobre políticas ambientales y de transporte.
 
 
-## **Ideas de análisis e implementación**
-​
-Algunas de las métricas e indicadores que podrían implementar son:  
-- Duración de viajes
-- % Rates
-- Viajes inter e intra boroughs
-- Días, días de la semana y semanas con mas viajes
-- Trip distance por passanger
-- Avg tips por passanger
-- % payments types
-- Borough con mayor/menor cantidad de viajes
-- Viajes entre distintas Zonas
-- Relación de cantidad de viajes con contaminación del aire y sonora  
+### Crear un Dashboard Interactivo de Análisis de Viajes
+Para proporcionar una visión completa de la movilidad en Manhattan, tenemos la intención de desarrollar un dashboard interactivo que muestre análisis detallados de los viajes de taxis, así como de empresas de transporte urbano de alto volumen como Uber y Lyft, en los 69 barrios de la ciudad. Este dashboard permitirá a la empresa explorar patrones de viaje, tendencias de demanda y otros datos relevantes, lo que facilitará la toma de decisiones basadas en datos para mejorar la movilidad urbana y reducir el impacto ambiental.
 
-- Nivel sonoro autos a combustión vs autos eléctricos  
+# Technology Stack
+<div align="center">
+  <img src="img/technology_stack.png" alt="Stack Tecnológico" height=380>
+</div>
 
-- Valores y depreciación vehículos a combustión (nuevos y/o usados) vs vehículos eléctricos  
+### Python
+Lenguaje de programación utilizado para la limpieza/transformación de los datos y desarrollo del modelo de machine learning.
 
-- Relación precio vehículo eléctrico con velocidad de carga del mismo  
+### SQL (Structured Query Language)
+Lenguaje de consultas utilizado para la gestión de bases de datos relacionales, la creación de tablas y la conexión entre las mismas.
 
+### Google Cloud Storage
+Servicio en la nube de almacenamiento escalable y seguro de datos y archivos.
 
-Mejoramiento de estrategias de marketing: campañas microsegmentadas
+### Google Cloud Compute Engine
+Servicio en la nube para la creación y gestión de máquinas virtuales para tareas de procesamiento.
 
-Mapas interactivos para acompañar los análisis. Distribución de puntos de carga y los diferentes medios que hay en US:
+### Google Cloud App Engine
+Plataforma en la nube que permite desplegar y alojar aplicaciones web y API's de manera escalable y flexible.
 
-![Charging Station Distribution US and Canada](Image/charging_stations.png)
+### Google Cloud BigQuery
+Data Warehouse en la nube para el almacén de datos y análisis a gran escala con SQL.
 
+### Google Colab
+Entorno basado en Jupyter Notebook en la nube para análisis de datos interactivo.
 
+### Google Vertex AI
+Plataforma de Google Cloud para la creación y despliegue eficiente de modelos de Machine Learning a gran escala.
 
-​
-Datos adicionales a cruzar: Servicios de viajes de otras plataformas, condiciones climáticas, contaminación sonora, contaminación del aire, emisión de CO2 y otros gases, análisis poblacional, ubicación de actividad comercial.
+### Google Looker Studio
+Herramienta de visualización personalizable para la creación de un dashboard interactivo.
 
-​
+### Mage.ai
+Herramienta de orquestación de flujo de trabajo para la automatización de tareas mediante pipelines y triggers.
 
-## **Datasets y fuentes complementarias**
-"Los datos son extraídos de las recolecciones hechas por NYC Taxi and Limousine Commission y otros organismos de NYC. Brinda información sobre cada viaje, los Boroughs, dónde esta cada sensor de sonido / calidad del aire, emisiones de CO2 generales entre otros datos que pueden expandir y buscar datasets alternativos o más actualizados si así lo desean (siempre y cuando puedan cumplir con lo propuesto).
-​
-​
-
-
-- [Fuente data de viajes](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
-- [Datos de Transporte Publico](https://developers.google.com/transit?hl=es-419)
-- [Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api) 
-- [API's de las condiciones climáticas](https://api.openweathermap.org)
-- [Dataset de Kaggle sobre emisiones de co2 por pais y año, con ajustes por población](https://www.kaggle.com/datasets/lobosi/c02-emission-by-countrys-grouth-and-population)
-- [Dataset de los sonidos recolectados en NYC](https://zenodo.org/record/3966543)
-- [Dataset de la calidad del aire de NYC](https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r)
-- [Que es un Borough?](https://en.wikipedia.org/wiki/Boroughs_of_New_York_City)
-- [Fuel consumption raitings](https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64#wb-auto-6)
-- Archivo de zonas de NYC --> taxi+_zone_lookup.csv
-- Ejemplos de Borougs y sus LAT Y LONG
-   Manhattan, New York City, NY, USA (40.776676, -73.971321)
-   Brooklyn, New York City, NY, USA (40.650002, -73.949997)
-   Bronx, New York City, NY, USA (40.837048, -73.865433)
-   Queens, New York City, NY, USA (40.742054, -73.769417)
-   Staten Island, New York City, NY, USA (40.579021, -74.151535)
-​
-
-- Enlace carpeta datasets: https://drive.google.com/drive/folders/15GG63G6oZODqYjIcphwqQmJbXRvPi-jC?usp=sharing 
-
-
-​
-## Disclaimer  
-De parte del equipo de Henry se quiere aclarar y remarcar que los fines de los proyectos propuestos son exclusivamente pedagógicos, con el objetivo de realizar proyectos que simulen un entorno laboral, en el cual se trabajen diversas temáticas ajustadas a la realidad.
- No reflejan necesariamente la filosofía y valores de la organización. Además, Henry no alienta ni tampoco recomienda a los alumnos y/o cualquier persona leyendo los repositorios (y entregas de proyectos) que tomen acciones en base a los datos que pudieran o no haber recabado. Toda la información expuesta y resultados obtenidos en los proyectos, nunca deben ser tomados en cuenta para la toma real de decisiones (especialmente en la temática de finanzas, salud, política, etc.).
-
+# Gantt Diagram
+# Data quality
+# Processes
+# KPI’S
