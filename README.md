@@ -1,4 +1,4 @@
-# Grupal project - NYC Taxis & Monoxide Carbon Emission Analysis
+# Group project - NYC Taxis & Monoxide Carbon Emission Analysis
 ​![Cover Image](img/cover.png)
 
 # Index
