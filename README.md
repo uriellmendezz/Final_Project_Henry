@@ -72,7 +72,7 @@ Our project relies on data from various sources to conduct comprehensive analysi
 <img src="img/colombia.png" alt="Colombian flag" width="17" height="17" style="vertical-align: middle; margin-right: 5px;"> Sebastian Figueroa 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ingesebasdatacoustics/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TuUsuarioDeGitHub)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SebasDatacoustic)
 
 ---
 
@@ -86,7 +86,7 @@ Our project relies on data from various sources to conduct comprehensive analysi
 <img src="img/mexico.png" alt="Mexican flag" width="17" height="17" style="vertical-align: middle; margin-right: 5px;"> Alfonso Justo 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alfonso-justo-921785174/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TuUsuarioDeGitHub)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AJusto14)
 
 ---
 
