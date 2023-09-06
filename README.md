@@ -1,57 +1,37 @@
 # Grupal project - NYC Taxis & Monoxide Carbon Emission Analysis
 ​![Cover Image](img/cover.png)
 
-# Introducción
-Te damos la bienvenida a nuestro proyecto de Data Science, el cual se fundamenta en conjuntos de datos históricos verídicos y detallados relativos a los servicios de taxi en Manhattan, Nueva York. Estos conjuntos de datos abarcan una variedad de servicios de transporte, desde los icónicos taxis amarillos y taxis verdes hasta los vehículos de alquiler y los vehículos de alquiler de alto volumen, como aquellos ofrecidos por empresas de transporte urbano como "Uber" o "Lyft", que operan en esta ciudad.
+# Introduction
+We welcome you to our Data Science project, which is based on real and detailed historical datasets related to taxi services in Manhattan, New York. These datasets cover various transportation services, including the iconic yellow taxis, green taxis, for-hire vehicles, and high-volume for-hire vehicles, such as those provided by urban transportation companies like "Uber" or "Lyft," which operate in this city.
 
-Además, nuestro proyecto pone especial énfasis en un aspecto de suma importancia: el impacto ambiental que estos servicios de transporte tienen en Manhattan. En un contexto en el que la preocupación por la calidad del aire y la sostenibilidad va en aumento, nos hemos comprometido a analizar la contribución de los taxis a las emisiones de carbono en la ciudad. Nuestra meta es proporcionar a las empresas de taxis posibles soluciones y oportunidades en el mercado de los vehículos eléctricos. De esta manera, no solo podrán aumentar sus ganancias y beneficios, sino que también contribuirán significativamente al cuidado del medio ambiente.
+Furthermore, our project emphasizes a crucial aspect: the environmental impact of these transportation services on Manhattan. In a context where concerns about air quality and sustainability are growing, we are committed to analyzing how taxis contribute to carbon emissions in the city. Our goal is to offer possible solutions and opportunities in the electric vehicle market to taxi companies. This not only increases their profits but also contributes to environmental care.
 
 # Objectives
-### Promover la Adopción de Vehículos Eléctricos
-Uno de nuestros principales objetivos es persuadir a la propietaria del proyecto de la viabilidad de los vehículos eléctricos como una solución efectiva para reducir la contaminación ambiental causada por los servicios de transporte que utilizan combustibles fósiles, como los taxis. Buscamos presentar argumentos sólidos respaldados por datos y análisis que demuestren los beneficios económicos y ambientales de esta transición hacia vehículos eléctricos.
-### Desarrollar un Modelo de Machine Learning para la Predicción de CO2
-Otro objetivo fundamental es crear un modelo de Machine Learning capaz de predecir la concentración de dióxido de carbono (CO2) en el aire de la ciudad de Manhattan para los próximos meses y años. Este modelo permitirá una mejor comprensión de las tendencias de emisiones de carbono y ayudará en la toma de decisiones informadas sobre políticas ambientales y de transporte.
+1. **Promote Electric Vehicle Adoption**: One of our main goals is to convince the project owner of the effectiveness of electric vehicles as a solution to reduce environmental pollution caused by transportation services using fossil fuels, such as taxis. We aim to present strong arguments supported by data and analysis that demonstrate the economic and environmental benefits of transitioning to electric vehicles.
 
+2. **Develop a Machine Learning Model for CO2 Prediction**: Another fundamental objective is to create a Machine Learning model capable of predicting the concentration of carbon dioxide (CO2) in the air of Manhattan for the upcoming months and years. This model will provide a better understanding of carbon emissions trends and assist in making informed decisions regarding environmental and transportation policies.
 
-### Crear un Dashboard Interactivo de Análisis de Viajes
-Para proporcionar una visión completa de la movilidad en Manhattan, tenemos la intención de desarrollar un dashboard interactivo que muestre análisis detallados de los viajes de taxis, así como de empresas de transporte urbano de alto volumen como Uber y Lyft, en los 69 barrios de la ciudad. Este dashboard permitirá a la empresa explorar patrones de viaje, tendencias de demanda y otros datos relevantes, lo que facilitará la toma de decisiones basadas en datos para mejorar la movilidad urbana y reducir el impacto ambiental.
+3. **Create an Interactive Travel Analysis Dashboard**: To provide a comprehensive view of mobility in Manhattan, we plan to develop an interactive dashboard displaying detailed analyses of taxi trips, as well as high-volume urban transportation companies like Uber and Lyft, in the city's 69 neighborhoods. This dashboard will enable the company to explore travel patterns, demand trends, and other relevant data, making data-driven decisions to enhance urban mobility and reduce environmental impact.
+
 
 # Technology Stack
 <div align="center">
-  <img src="img/technology_stack.png" alt="Stack Tecnológico" height=380>
+  <img src="img/technology_stack.png" alt="Stack Tecnológico" height=470 width=1000>
 </div>
 
-### Python
-Lenguaje de programación utilizado para la limpieza/transformación de los datos y desarrollo del modelo de machine learning.
-
-### SQL (Structured Query Language)
-Lenguaje de consultas utilizado para la gestión de bases de datos relacionales, la creación de tablas y la conexión entre las mismas.
-
-### Google Cloud Storage
-Servicio en la nube de almacenamiento escalable y seguro de datos y archivos.
-
-### Google Cloud Compute Engine
-Servicio en la nube para la creación y gestión de máquinas virtuales para tareas de procesamiento.
-
-### Google Cloud App Engine
-Plataforma en la nube que permite desplegar y alojar aplicaciones web y API's de manera escalable y flexible.
-
-### Google Cloud BigQuery
-Data Warehouse en la nube para el almacén de datos y análisis a gran escala con SQL.
-
-### Google Colab
-Entorno basado en Jupyter Notebook en la nube para análisis de datos interactivo.
-
-### Google Vertex AI
-Plataforma de Google Cloud para la creación y despliegue eficiente de modelos de Machine Learning a gran escala.
-
-### Google Looker Studio
-Herramienta de visualización personalizable para la creación de un dashboard interactivo.
-
-### Mage.ai
-Herramienta de orquestación de flujo de trabajo para la automatización de tareas mediante pipelines y triggers.
-
-# Gantt Diagram
-# Data quality
 # Processes
-# KPI’S
+# Key Performance Indicators (KPIs)
+
+# Data Source
+Our project relies on data from various sources to conduct comprehensive analysis. These data sources are essential for providing insights into different aspects of transportation and environmental impact in Manhattan, New York.
+
+1. **NYC Taxi & Limousine Commission (TLC)**: We utilize historical and current data on trips from various types of public transportation services in the city of New York. This data source offers valuable information about taxi services, including yellow cabs, green cabs, and more. You can access the data at [NYC TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
+
+
+2. **Air Pollution Data from OpenWeather.org API**: We collect data on air quality based on the coordinates of Manhattan. This data source allows us to monitor air pollution levels and their impact on the city. For more information, visit [OpenWeather.org API - Air Pollution](https://openweathermap.org/api/air-pollution).
+
+
+3. **Noise Project Data**: To understand noise pollution in Manhattan, we use data filtered for specific zones and neighborhoods. This data helps us assess the noise levels in different areas and their potential effects. You can access the data at [Noise Project Data](https://noiseproject.org/data-download/).
+
+
+
