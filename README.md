@@ -8,6 +8,7 @@
 - [ETL Process (Extract, Transform, Load)](#etl-process-extract-transform-load)
 - [Gantt Diagram](#gantt-diagram)
 - [Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
+- [API](#api)
 - [Data Source](#data-source)
 - [Contributors](#contributors)
 
@@ -59,6 +60,166 @@ Once the data was clean, standardized, and enriched, we proceeded to export it t
 
 
 # Key Performance Indicators (KPIs)
+
+# API
+
+#### In order to provide up-to-date information about taxis and zones in the city of Manhattan, New York, we initiated the creation of an API. Through various endpoints, you can inquire about different topics.
+
+Below, each endpoint is described along with the expected input and output information:
+
+### *🎮 API Documentation:* **https://nyc-taxis-project.rj.r.appspot.com/docs**
+
+<br>
+
+- Path: ***`/`***
+
+- Description: Root path. Option to query information about zones or taxis.
+
+- Sample Request: https://nyc-taxis-project.rj.r.appspot.com
+
+  ```json
+  {
+    "/zones": "Get info about zones",
+    "/taxis": "Get info about taxis"
+  }
+  ```
+<br>
+
+<br>
+
+- Path: ***`/zones`***
+
+- Description: List of zones in the city of Manhattan
+
+- Sample Request: https://nyc-taxis-project.rj.r.appspot.com/zones
+
+  ```json
+  {
+    "Alphabet City": "4",
+    "Battery Park": "12",
+    "Battery Park City": "13",
+    "Bloomingdale": "24",
+    "Central Harlem": "41",
+    "Central Harlem North": "42",
+    "Central Park": "43",
+    "Chinatown": "45",
+    "Clinton East": "48",
+    "Clinton West": "50",
+    "East Chelsea": "68",
+    "East Harlem North": "74",
+    "East Harlem South": "75",
+    ...
+  }
+  ```
+<br>
+
+<br>
+
+  - Path: ***`/zones/{zone}`***
+
+  - Description: Get the number of trips that occurred in the last month in a specific zone. Returns the number of trips for yellow taxis, green taxis, for-hire vehicles (grey taxis), and high-volume for-hire vehicles (black taxis).
+
+  - Input Parameters: zone (str)
+
+  - Sample Request: https://nyc-taxis-project.rj.r.appspot.com/zones/Bloomingdale
+
+  ```json
+  {
+    "Zone": "Bloomingdale",
+    "IdZone": 24,
+    "year": 2023,
+    "month": 5,
+    "TotalTrips": 53496,  # Total number of trips
+    "TotalGreen": 1006,   # Number of green taxi trips
+    "TotalYellow": 8376,  # Number of yellow taxi trips
+    "TotalBlack": 43454,  # Number of black taxi trips
+    "TotalGrey": 660,     # Number of grey taxi trips
+    "%_Green": 1.881,     # Percentage of green taxis out of total trips
+    "%_Yellow": 15.657,   # Percentage of yellow taxis out of total trips
+    "%_Black": 81.229,    # Percentage of black taxis out of total trips
+    "%_Grey": 1.234       # Percentage of grey taxis out of total trips
+  }
+  ```
+<br>
+
+<br>
+
+- Path: ***`/taxis`***
+
+- Description: Show the query options for the taxis
+
+- Sample Request: https://nyc-taxis-project.rj.r.appspot.com/taxis
+
+  ```json
+  {
+    "/greens": "Get a ranking of zones with the highest circulation of green taxis",
+    "/yellows": "Get a ranking of zones with the highest circulation of yellow taxis",
+    "/blacks": "Get a ranking of zones with the highest circulation of black taxis",
+    "/greys": "Get a ranking of zones with the highest circulation of grey taxis"
+  }
+  ```
+<br>
+
+<br>
+
+- Path: ***`/taxis/{color}`***
+
+- Description: Returns a list of all zones sorted in descending order based on the number of trips in the last month.
+
+- Input parameters: color (str) > (greens, yellows, blacks, greys)
+
+- Sample Request: https://nyc-taxis-project.rj.r.appspot.com/taxis/yellows
+
+
+  ```json
+  [
+    {
+        "Ranking": 1,
+        "Zone": "Upper East Side South",
+        "IdZone": 237,
+        "year": 2023,
+        "month": 5,
+        "TotalYellowTrips": 151348
+    },
+    {
+        "Ranking": 2,
+        "Zone": "Midtown Center",
+        "IdZone": 161,
+        "year": 2023,
+        "month": 5,
+        "TotalYellowTrips": 136388
+    },
+    {
+        "Ranking": 3,
+        "Zone": "Upper East Side North",
+        "IdZone": 236,
+        "year": 2023,
+        "month": 5,
+        "TotalYellowTrips": 134878
+    },
+    {
+        "Ranking": 4,
+        "Zone": "Lincoln Square East",
+        "IdZone": 142,
+        "year": 2023,
+        "month": 5,
+        "TotalYellowTrips": 109792
+    },
+    {
+        "Ranking": 5,
+        "Zone": "Midtown East",
+        "IdZone": 162,
+        "year": 2023,
+        "month": 5,
+        "TotalYellowTrips": 104264
+    },
+    ...
+  ]
+  ```
+
+<br>
+
+<br>
 
 # Data Source
 Our project relies on data from various sources to conduct comprehensive analysis. These data sources are essential for providing insights into different aspects of transportation and environmental impact in Manhattan, New York.
