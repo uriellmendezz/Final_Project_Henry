@@ -47,6 +47,10 @@ Each type of transportation subject to the ETL process underwent specific treatm
 
 Once the data was clean, standardized, and enriched, we proceeded to export it to our Data Warehouse, specifically into BigQuery tables. This step is crucial for enabling advanced analytics and high-performance queries that drive our strategic decision-making processes.
 
+<div align="center">
+  <img src="img/pipeline_mage.svg" alt="Pipeline">
+</div>
+
 # Gantt Diagram
 <div align="center">
   <img src="img/gantt_diagram_svg.svg" alt="Gantt Diagram">
@@ -69,28 +73,25 @@ Our project relies on data from various sources to conduct comprehensive analysi
 
 # Contributors
 
-<img src="img/colombia.png" alt="Colombian flag" width="17" height="17" style="vertical-align: middle; margin-right: 5px;"> Sebastian Figueroa 
+Sebastian Figueroa 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ingesebasdatacoustics/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SebasDatacoustic)
 
 ---
-
-<img src="img/colombia.png" alt="Colombian flag" width="17" height="17" style="vertical-align: middle; margin-right: 5px;"> Carlos Prieto 
+Carlos Prieto 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlos-prieto-1b140b269/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cprieto76)
 
 ---
-
-<img src="img/mexico.png" alt="Mexican flag" width="17" height="17" style="vertical-align: middle; margin-right: 5px;"> Alfonso Justo 
+ Alfonso Justo 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alfonso-justo-921785174/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AJusto14)
 
 ---
-
-<img src="img/argentina.png" alt="Argentinanm flag" width="17" height="17" style="vertical-align: middle; margin-right: 5px;"> Uriel Mendez 
+ Uriel Mendez 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/uriellmendezz/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/uriellmendezz)

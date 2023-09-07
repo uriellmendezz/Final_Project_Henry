@@ -26,14 +26,21 @@ def read_root():
         Welcome to the New York Taxi Project API!
 
         You can request for the following endpoints:
+        - /zones
+        - Obtener la cantidad de viajes realizados en una zona en especifico durante el ultimo mes
+        - Obtener las zonas con mayor circulaciones de taxis por tipos de transporte
             - Top 5 barrios con mas viajes en los ultimos 10 dias (ordenado de mayor a menor)
             - Top 5 barrios con menos viajes en los ultimos 10 dias (ordenado de mayor a menor)
             - Predicción de concentraciones de CO para la ciudad de Manhattan en una determinada fecha futura
-            - Consultar por un barrio en particular y ver que porcentaje de viajes le corresponde a cada tipo de transporte
             - Prediccion de cantidad de viajes para un tipo de transporte en especifico
             - Promedio de concentraciones de CO por barrio
     '''
-    return message
+    functions = {
+        '/zones': 'Get info about zones',
+        '/taxis':'Get info about taxis'
+    }
+    json_str = json.dumps(functions, indent=4, default=str)
+    return Response(content=json_str, media_type='application/json')
 
 @app.get('/zones')
 def zones():
@@ -262,10 +269,10 @@ def home_taxis():
 def home_taxis(color):
     if color not in ['greens','yellows','blacks','greys']:
         data_json = {
-        'taxis/greens':'Get a ranking of zones with the highest circulation of green taxis',
-        'taxis/yellows':'Get a ranking of zones with the highest circulation of yellow taxis',
-        'taxis/blacks':'Get a ranking of zones with the highest circulation of black taxis',
-        'taxis/greys':'Get a ranking of zones with the highest circulation of grey taxis'
+        'taxis/greens':'Get a ranking of zones with the highest circulation of green taxis in the last month',
+        'taxis/yellows':'Get a ranking of zones with the highest circulation of yellow taxis in the last month',
+        'taxis/blacks':'Get a ranking of zones with the highest circulation of black taxis in the last month',
+        'taxis/greys':'Get a ranking of zones with the highest circulation of grey taxis in the last month'
 
         }
         json_str = json.dumps(data_json, indent=4, default=str)
@@ -313,23 +320,4 @@ def home_taxis(color):
 
         return Response(content=json_str, media_type='application/json')
 
-@app.get('/zones/top-{n}')
-def top5_zones(n):
-    query = f'''
-    SELECT
-        mz.Zone AS Zone,
-        (COUNT(bt.PULocationID) + COUNT(bt.DOLocationID)) as TotalBlack
-    FROM
-        `new_york_transport_project.manhattan_zones` mz
-    JOIN 
-        `new_york_transport_project.black_taxis` bt
-    ON
-        mz.LocationID = bt.PULocationID
-    GROUP BY Zone
-    ORDER BY TotalBlack DESC
-    LIMIT {n}; 
-    '''
-
-    query_job = client.query(query).to_dataframe()
-    return None
 
