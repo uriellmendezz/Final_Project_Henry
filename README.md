@@ -8,6 +8,7 @@
 - [ETL Process (Extract, Transform, Load)](#etl-process-extract-transform-load)
 - [Gantt Diagram](#gantt-diagram)
 - [Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
+- [Machine Learning Model](#machine-learning-model)
 - [API](#api)
 - [Data Source](#data-source)
 - [Contributors](#contributors)
@@ -60,6 +61,41 @@ Once the data was clean, standardized, and enriched, we proceeded to export it t
 
 
 # Key Performance Indicators (KPIs)
+### 🚕 **Market Share by Transportation Segment in Manhattan for 2025**
+
+This KPI measures the market share of each transportation segment (yellow taxis, green taxis, for-hire vehicles, and high-volume for-hire vehicles) in relation to the total transportation market in Manhattan for the year 2025. The resulting percentage will reflect how much each segment contributes to the overall market and will allow for an evaluation of the balance and appropriate proportion of transportation services for the population of Manhattan. This will help ensure an optimal distribution of transportation resources and effectively address the needs of the population.
+
+### ☁️ **Average Carbon Monoxide (CO) Concentration in Manhattan Zones in 2025**
+
+This KPI assesses air quality in Manhattan for the year 2025 by measuring the average concentration of Carbon Monoxide (CO) in micrograms per cubic meter (μg/m³) in each zone. The goal is to maintain the CO concentration below 9000 μg/m³ in all Manhattan zones. This ensures a healthier and more sustainable environment for the population, reducing the risks associated with air pollution. The KPI will help monitor and control compliance with air quality standards in the city.
+
+### 📠 **Percentage of HVFHV + FHV Trips Relative to Total Trips**
+
+*Grey taxis = FHV (For Hire Vehicles)*
+
+*Black taxis = HVFHV (High Volume For Hire Vehicles)*
+
+KPI Formula: ((Number of HVFHV + FHV Trips) / Total Trips) x 100
+
+This KPI calculates the percentage of trips involving High-Volume for-Hire Vehicles (HVFHV) and For-Hire Vehicles (FHV) in relation to the total number of trips taken in Manhattan before and after the pandemic. This will allow you to assess how these categories of transportation are being used in comparison to other modes of transportation.
+
+
+
+# Machine Learning Model
+
+In the context of our project, two machine learning models with specific focuses have been developed. The first model centers on predicting the concentration of carbon monoxide (CO) in the air. Initially, data loading and preparation tasks were performed to ensure the quality and proper format of the information. Subsequently, a linear regression model was implemented, utilizing the time in days since the maximum date as a feature and CO concentration as the target variable. This model is used to make predictions of CO concentration on specific dates provided by the user.
+
+<div align="left">
+  <img src="img/modelo.png" alt="Predictions Model" height=250 width=500>
+</div> 
+
+The second model is oriented towards predicting the quantity of trips in black taxis, relying on historical data. In this phase, data loading and preprocessing procedures were carried out, including data scaling to enhance performance. Data sequences were created for training a LSTM neural network model, which was trained for 50 epochs. Subsequently, these sequences were used to make predictions for the quantity of future trips, spanning a period of 30 months. These predictions were integrated into a timeframe that extends from the most recent available data date to 30 months into the future.
+
+<div align="left">
+  <img src="img/model2.png" alt="Predictions Model" height=250 width=250>
+</div>
+
+Both models represent valuable tools for decision-making in our project, providing the ability to anticipate both air quality in relation to CO and the future demand for black taxi services, which is essential to our business strategy.
 
 # API
 
@@ -233,7 +269,6 @@ Our project relies on data from various sources to conduct comprehensive analysi
 3. **Noise Project Data**: To understand noise pollution in Manhattan, we use data filtered for specific zones and neighborhoods. This data helps us assess the noise levels in different areas and their potential effects. You can access the data at [Noise Project Data](https://noiseproject.org/data-download/).
 
 
-
 # Contributors
 
 Sebastian Figueroa 
@@ -248,13 +283,13 @@ Carlos Prieto
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cprieto76)
 
 ---
- Alfonso Justo 
+Alfonso Justo 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alfonso-justo-921785174/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AJusto14)
 
 ---
- Uriel Mendez 
+Uriel Mendez 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/uriellmendezz/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/uriellmendezz)
