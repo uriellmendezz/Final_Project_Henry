@@ -129,15 +129,15 @@ Below, each endpoint is described along with the expected input and output infor
     "IdZone": 24,
     "year": 2023,
     "month": 5,
-    "TotalTrips": 53496,  # Total number of trips
-    "TotalGreen": 1006,   # Number of green taxi trips
-    "TotalYellow": 8376,  # Number of yellow taxi trips
-    "TotalBlack": 43454,  # Number of black taxi trips
-    "TotalGrey": 660,     # Number of grey taxi trips
-    "%_Green": 1.881,     # Percentage of green taxis out of total trips
-    "%_Yellow": 15.657,   # Percentage of yellow taxis out of total trips
-    "%_Black": 81.229,    # Percentage of black taxis out of total trips
-    "%_Grey": 1.234       # Percentage of grey taxis out of total trips
+    "TotalTrips": 53496,  
+    "TotalGreen": 1006,   
+    "TotalYellow": 8376,  
+    "TotalBlack": 43454,  
+    "TotalGrey": 660,     
+    "%_Green": 1.881,     
+    "%_Yellow": 15.657,   
+    "%_Black": 81.229,   
+    "%_Grey": 1.234    
   }
   ```
 <br>
